@@ -5,63 +5,80 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#FCF6F6"
+    >
 
-    <LinearLayout
-        style="@style/liner"
-        >
-        <TextView
-            style="@style/textone"
-            android:text="Your Weight"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Your height"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:background="#F7DEDC"
+       />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Weight"/>
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:hint="centimeters"
+        android:background="#C8F2F7"
+        />
 
-    </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Your Weight"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:background="#F7DEDC"/>
 
-    <LinearLayout
-        style="@style/liner">
-
-        <TextView
-            style="@style/textone"
-            android:text="Your Height" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Height"
-            android:textAlignment="center" />
-
-    </LinearLayout>
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:hint="kilogram"
+        android:background="#C8F2F7"
+        />
 
     <Button
+        android:id="@+id/btncal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate BMI"
+        android:layout_margin="10dp"
+        android:text="Compute bmi"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:background="#CC816A"
+        />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Your BMI"
+        android:textSize="20dp"
         android:gravity="center"
-        android:layout_margin="60dp"/>
+        android:background="#F7DEDC"
+        />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tvresult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="80dp">
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="#80EEF2"
+        />
 
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Result"
-            android:textAlignment="center" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your BMI"
-            android:textAlignment="center" />
-
-    </LinearLayout>
 
 </LinearLayout>
